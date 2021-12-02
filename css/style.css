@@ -1,3 +1,66 @@
-body {
-    background-color: black;
+:root {
+    --primary: #cec327;
+    --light: #EEEEEE;
+    --dark: #3a3939;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--dark);
+    padding: 8px 16px;
+    border-bottom: 3px solid var(--primary);
+}
+
+.navbar-brand {
+    color: #cec327;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-toggler {
+
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar .fa-bong {
+
+    width: 20px;
+    height: 14px;
+    margin-bottom: 5px;
+    color: var(--primary);
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+}
+
+
+.nav-link {
+    color: #fff;
+    margin: 0 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
+
+}
+
+.nav-link:hover {
+    background-color: var(--primary);
 }
