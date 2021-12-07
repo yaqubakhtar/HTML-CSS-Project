@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    background-color: black;
 }
 
 .hero {
@@ -18,7 +19,7 @@
     background-size: cover;
     max-width: 100%;
     height: 100vh;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 
 .navbar {
@@ -106,4 +107,8 @@ a.nav-link.main {
 
 .navbar-brand:hover {
     color: white;
+}
+.info .col-sm-4 {
+    border: 1px solid var(--primary);
+    color: var(--light);
 }
