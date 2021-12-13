@@ -95,7 +95,7 @@ a.nav-link.main {
     z-index: 1;
 }
 
-.fab {
+.socials i {
     letter-spacing: 5px;
     font-size: 25px;
     color: var(--primary);
@@ -118,7 +118,7 @@ a.nav-link.main {
      height: auto;
      }
 
-     .how {
+.how {
          color: var(--light);
          background-image: url(../images/head.jpg);
          border-top: 2px solid var(--primary);
@@ -128,29 +128,46 @@ a.nav-link.main {
          height: auto;
          }
 
-         .howheader {
+ .top.fa-ul {
+     display: inline-block;
+     margin-left: 10px;
+
+ }
+
+ .top i {
+     color: var(--primary);
+ }
+
+ .areas.fa-ul {
+     display: inline-block;
+     margin-left: 10px;
+
+ }
+
+ .areas i {
+     color: var(--primary);
+ }
+ .howheader {
              background-image: url(../images/header.png);
              background-size: contain;
              width: 50%;
              color: #EEEEEE;
              margin: 10px;
              border: 2px solid var(--primary);
-             white-space: nowrap;
 
          }
 
-         .how1 {
+.how1 {
              margin-top: 20px;
          }
 
-         .how2 {
+.how2 {
+             margin-top: 20px;
+         }
+ .how3 {
              margin-top: 20px;
          }
 
-         .how3 {
-             margin-top: 20px;
-         }
-
-         .how4 {
+ .how4 {
              margin-top: 20px;
          }
