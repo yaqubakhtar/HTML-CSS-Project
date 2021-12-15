@@ -1,3 +1,5 @@
+/*root styling*/
+
 :root {
     --primary: #cec327;
     --light: #EEEEEE;
@@ -12,6 +14,8 @@
     sans-serif;
 }
 
+/*background-image*/
+
 .hero {
     background-image: url(../images/may8.jpg);
     background-position: center;
@@ -21,6 +25,7 @@
     height: 100vh;
     border-bottom: 2px solid var(--primary);
 }
+/*navbar*/
 
 .navbar {
     top: 0;
@@ -29,6 +34,7 @@
     padding: 8px 16px;
     border-bottom: 3px solid var(--primary);
 }
+/*navbar logo/brand*/
 
 .navbar-brand {
     color: #cec327;
@@ -37,6 +43,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     }
+/*default menu toggler*/
 
 .navbar .navbar-toggler {
 
@@ -47,6 +54,7 @@
     background: none;
     cursor: pointer;
 }
+/*custom menu toggler*/
 
 .navbar .fa-bong {
 
@@ -59,8 +67,9 @@
     transition: 0.4s;
 }
 
+/*navbar links*/
 
-a.nav-link.main {
+a.menu {
     color: var(--light);
     margin: 0 16px;
     font-weight: 400;
@@ -75,15 +84,7 @@ a.nav-link.main {
     border-width: 3px;
     }
 
-    a.nav-link.main:hover {
-        background-color: white;
-        color: black;
-        border-color: var(--primary);
-        border-radius: 15px;
-        border-style: double;
-        border-width: 3px;
-
-    }
+/* alert banner*/
 
 .alert {
     background: white;
@@ -94,36 +95,89 @@ a.nav-link.main {
     padding-right: 0;
     z-index: 1;
 }
-
+/* menu social icons*/
 .socials i {
     letter-spacing: 5px;
     font-size: 25px;
     color: var(--primary);
 }
+/*icons and brand/logo on hover*/
 
-.fab:hover {
-    color: white;
-}
-
+.socials i:hover,
 .navbar-brand:hover {
     color: white;
 }
- .info {
-     color: var(--light);
-     background-image: url(../images/head.jpg);
+
+/*navbar links on hover*/
+
+a.menu:hover {
+    background-color: white;
+    color: black;
+    border-color: var(--primary);
+    border-radius: 15px;
+    border-style: double;
+    border-width: 3px;
+}
+/* how it works heading*/
+
+.howitworksheader {
+    background-image: url(../images/header.png);
+    background-size: contain;
+    width: 50%;
+    color: #EEEEEE;
+    margin: 10px;
+    border: 2px solid var(--primary);
+}
+
+/* how it works sections*/
+
+.how1 {
+    margin-top: 20px;
+}
+
+.how2 {
+    margin-top: 20px;
+}
+
+.how3 {
+    margin-top: 20px;
+}
+
+.how4 {
+    margin-top: 20px;
+}
+
+.howitworks {
+    color: var(--light);
+    background-image: url(../images/head.jpg);
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    background-size: cover;
+    background-position: center;
+    }
+
+/*our services heading*/
+
+.servicesheader {
+    background-image: url(../images/header.png);
+    background-size: contain;
+    width: 50%;
+    color: #EEEEEE;
+    margin: 10px;
+    border: 2px solid var(--primary);
+
+}
+
+/* our services section*/
+
+.ourservices {
+    color: var(--light);
+    background-image: url(../images/head.jpg);
      border-bottom: 2px solid var(--primary);
      background-size: cover;
      background-position: center;
      }
-
-.how {
-         color: var(--light);
-         background-image: url(../images/head.jpg);
-         border-top: 2px solid var(--primary);
-         border-bottom: 2px solid var(--primary);
-         background-size: cover;
-         background-position: center;
-         }
+/* top flavours section*/
 
  .top.fa-ul {
      display: inline-block;
@@ -131,9 +185,11 @@ a.nav-link.main {
 
  }
 
- .top i {
+ .topflavours i {
      color: var(--primary);
  }
+
+/*areas section*/
 
  .areas.fa-ul {
      display: inline-block;
@@ -144,34 +200,40 @@ a.nav-link.main {
  .areas i {
      color: var(--primary);
  }
- .howheader {
-             background-image: url(../images/header.png);
-             background-size: contain;
-             width: 50%;
-             color: #EEEEEE;
-             margin: 10px;
-             border: 2px solid var(--primary);
+/* our services headings*/
+.home,
+.toppicks,
+.delivery,
+.event {
+    color: var(--primary);
+}
 
-         }
+/*footer*/
 
-.how1 {
-             margin-top: 20px;
-         }
+.footer {
+    color: var(--light);
+    background-image: url(../images/head.jpg);
+    border-bottom: 2px solid var(--primary);
+    background-size: cover;
+    background-position: center;
+ }
+/*footer opening hours*/
 
-.how2 {
-             margin-top: 20px;
-         }
- .how3 {
-             margin-top: 20px;
-         }
+.table {
+    justify-content: center;
 
- .how4 {
-             margin-top: 20px;
-         }
+}
+
+/*footer socials*/
+
 .endsocials i {
     letter-spacing: 5px;
     font-size: 25px;
     color: var(--primary);
+}
+
+.endsocials i:hover {
+    color: white;
 }
 
 .endsocials {
@@ -187,6 +249,7 @@ a.nav-link.main {
     justify-content: center;
     margin: 10px;
 }
+/*flavaz shisha hire 2022 heading*/
 
 .end {
     background-image: url(../images/header.png);
@@ -201,32 +264,29 @@ a.nav-link.main {
     justify-content: center;
 }
 
-.history,
-.toppicks,
-.delivery,
-.event {
+/*footer details*/
+.address,
+.email,
+.phone {
+    background-image: url(../images/header.png);
+    background-size: contain;
+    border: 2px solid var(--primary);
+}
+
+.details i {
+    letter-spacing: 5px;
     color: var(--primary);
 }
 
-.infoheader {
-    background-image: url(../images/header.png);
-    background-size: contain;
-    width: 50%;
-    color: #EEEEEE;
-    margin: 10px;
-    border: 2px solid var(--primary);
+.details {
 
-}
-
-.footer {
-    color: var(--light);
-    background-image: url(../images/head.jpg);
-    border-bottom: 2px solid var(--primary);
-    background-size: cover;
-    background-position: center;
-}
-
-.table {
-    display: flex;
     justify-content: center;
+}
+
+/* footer headings*/
+
+.contact,
+.openhours,
+.footersocials {
+    color: var(--primary);
 }
