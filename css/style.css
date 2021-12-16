@@ -3,7 +3,7 @@
 :root {
     --primary: #cec327;
     --light: #EEEEEE;
-    --dark: #3a3939;
+    --dark: #000000;
 }
 
 * {
@@ -17,7 +17,7 @@
 /*background-image*/
 
 .hero {
-    background-image: url(../images/may8.jpg);
+    background-image: url(../images/head.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,7 +79,7 @@ a.menu {
     background-color: black;
     color: var(--light);
     border-color: var(--primary);
-    border-radius: 15px;
+    border-radius: 10px;
     border-style: dashed;
     border-width: 3px;
     }
@@ -114,7 +114,7 @@ a.menu:hover {
     background-color: white;
     color: black;
     border-color: var(--primary);
-    border-radius: 15px;
+    border-radius: 10px;
     border-style: double;
     border-width: 3px;
 }
@@ -123,33 +123,34 @@ a.menu:hover {
 .howitworksheader {
     background-image: url(../images/header.png);
     background-size: contain;
-    width: 50%;
     color: #EEEEEE;
     margin: 10px;
     border: 2px solid var(--primary);
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
 }
 
 /* how it works sections*/
 
-.how1 {
-    margin-top: 20px;
-}
-
-.how2 {
-    margin-top: 20px;
-}
-
-.how3 {
-    margin-top: 20px;
-}
-
+.how1,
+.how2,
+.how3,
 .how4 {
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+    .how1img,
+    .how2img,
+    .how3img,
+    .how4img {
+        margin-bottom: 5px;
 }
 
 .howitworks {
     color: var(--light);
-    background-image: url(../images/head.jpg);
+    /* background-image: url(../images/head.jpg); */
+    background-color: black;
     border-top: 2px solid var(--primary);
     border-bottom: 2px solid var(--primary);
     background-size: cover;
@@ -161,10 +162,12 @@ a.menu:hover {
 .servicesheader {
     background-image: url(../images/header.png);
     background-size: contain;
-    width: 50%;
     color: #EEEEEE;
     margin: 10px;
     border: 2px solid var(--primary);
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
 
 }
 
@@ -212,6 +215,7 @@ a.menu:hover {
     color: var(--primary);
     border: 2px solid var(--light);
     background-color: black;
+    border-radius: 5px;
 }
 
 /*footer*/
@@ -277,6 +281,8 @@ a.menu:hover {
     background-image: url(../images/header.png);
     background-size: contain;
     border: 2px solid var(--primary);
+    display: block;
+    overflow-wrap: break-word;
 }
 
 .details i {
@@ -295,4 +301,15 @@ a.menu:hover {
 .openhours,
 .footersocials {
     color: var(--primary);
+}
+.gallery {
+    /* background-image: url(../images/head.jpg); */
+    background-color: black;
+    background-position: center;
+    border-bottom: 2px solid var(--primary);
+}
+
+.btn {
+    background-color: #cec327;
+    border: none;
 }
