@@ -73,8 +73,8 @@
             </div> -->
         </div>
     </div>
-    <form class="contactform my-5">
-        <div class="form-row container-fluid">
+    <form class="contactform my-5 container-fluid">
+        <div class="form-row">
             <div class="form-group col-lg-6">
                 <label for="inputname" style=color:white>Full Name</label>
                 <input type="name" class="form-control" id="inputname" placeholder="Name">
@@ -84,7 +84,7 @@
                 <input type="email" class="form-control" id="inputPassword4" placeholder="youremail@example.com">
             </div>
         </div>
-        <div class="form-row container-fluid">
+        <div class="form-row">
             <div class="form-group col-lg-6">
                 <label for="inputCity" style=color:white>Event City</label>
                 <input type="text" class="form-control" id="inputCity" placeholder="London">
@@ -94,85 +94,99 @@
                 <label for="inputpostcode" style=color:white>Event Postcode</label>
                 <input type="text" class="form-control" id="postcode" placeholder="AB12 3CD">
             </div>
-            <div class="form-row container-fluid">
-                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker col-lg-4"
-                    inline="true">
-                    <label for="date" style=color:white>Event Date</label>
-                    <i class="fas fa-calendar input-prefix" style=color:white></i>
-                    <input placeholder="Select date" type="text" id="example" class="form-control">
+        </div>
+        <div class="form-row">
+            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker col-lg-4"
+                inline="true">
+                <label for="date" style=color:white>Event Date</label>
+                <i class="fas fa-calendar input-prefix" style=color:white></i>
+                <input placeholder="Select date" type="text" id="example" class="form-control">
 
-                </div>
-                <div class="form-group col-lg-4">
-                    <label for="inputhours" style=color:white>Event Start Time (Hours)</label>
-                    <select id="inputhours" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>00</option>
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                        <option>04</option>
-                        <option>05</option>
-                        <option>06</option>
-                        <option>07</option>
-                        <option>08</option>
-                        <option>09</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                        <option>13</option>
-                        <option>14</option>
-                        <option>15</option>
-                        <option>16</option>
-                        <option>17</option>
-                        <option>18</option>
-                        <option>19</option>
-                        <option>20</option>
-                        <option>21</option>
-                        <option>22</option>
-                        <option>23</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputmins" style=color:white>And Mins</label>
-                    <select id="inputmins" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>00</option>
-                        <option>15</option>
-                        <option>30</option>
-                        <option>45</option>
-                    </select>
-                </div>
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-4">
+                <label for="inputhours" style=color:white>Event Start Time (Hours)</label>
+                <select id="inputhours" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>00</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                </select>
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="inputmins" style=color:white>And Mins</label>
+                <select id="inputmins" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>00</option>
+                    <option>15</option>
+                    <option>30</option>
+                    <option>45</option>
+                </select>
+            </div>
+            </div>
+        <div class="form-row">
+            <div class="form-group col-lg-4">
                 <label for="inputhoursreq" style=color:white>Number of hours required</label>
                 <input type="text" class="form-control" id="postcode" placeholder="5 hours">
             </div>
-            <div class="form-group col-lg-6">
+            <div class="form-group col-lg-4">
                 <label for="inputshishasreq" style=color:white>Number of shishas required</label>
                 <input type="text" class="form-control" id="postcode" placeholder="5 shishas">
             </div>
 
-            <label for="inputstaffreq" style=color:white>Do you require staff?</label>
+            <div class="form-group col-lg-4 text-center">
+                <legend class="col-form-label" style=color:white>Staff required?</legend>
 
-            <div class="form-check form-check-inline">
+                <div class="form-check form-check-inline">
 
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
-                    checked>
-                <label class="form-check-label" style=color:white for="yes">
-                    Yes
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" style=color:white for="no">
-                    No
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                <label class="form-check-label" style=color:white for="maybe">
-                    I'd like a quote for both
-                </label>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" style=color:white for="yes">
+                        Yes
+                    </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" style=color:white for="no">
+                        No
+                    </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3"
+                        value="option3">
+                    <label class="form-check-label" style=color:white for="maybe">
+                        I'd like a quote for both
+                    </label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label for="inputfurtherinfo" style=color:white>Further Information?</label>
+
+                            <textarea class="form-control" id="Textarea" rows="3"
+                                placeholder="Any further information you think would help generate a more accurate quote"></textarea>
             </div>
         </div>
 
