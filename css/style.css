@@ -56,6 +56,9 @@
     border-radius: 6px;
     transform-origin: 0 0;
     transition: 0.4s;
+    position: absolute;
+    top: 17px;
+    right: 1px;
 }
 
 /*navbar links*/
@@ -139,8 +142,8 @@ a.menu:hover {
     color: var(--light);
     background-image: url(../images/head.jpg);
     background-color: black;
-    border-top: 2px solid var(--primary);
-    border-bottom: 2px solid var(--primary);
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
     background-size: cover;
     background-position: center;
     }
@@ -164,8 +167,8 @@ a.menu:hover {
 .ourservices {
     color: var(--light);
     background-image: url(../images/head.jpg);
-     border-bottom: 2px solid var(--primary);
-     border-top: 2px solid var(--primary);
+     border-bottom: 1px solid var(--primary);
+     border-top: 1px solid var(--primary);
      background-size: cover;
      background-position: center;
      }
@@ -211,16 +214,13 @@ a.menu:hover {
 .footer {
     color: var(--light);
     background-image: url(../images/head.jpg);
-    border-bottom: 2px solid var(--primary);
+    border-top: 1px solid var(--primary);
     background-size: cover;
     background-position: center;
  }
 /*footer opening hours*/
 
-.table {
-    justify-content: center;
 
-}
 
 /*footer socials*/
 
@@ -265,7 +265,11 @@ a.menu:hover {
 /*footer details*/
 .address,
 .email,
-.phone {
+.phone,
+.mon-thu,
+.fri-sat,
+.sunday,
+.deliveryareas {
     background-image: url(../images/header.png);
     background-size: contain;
     border: 2px solid var(--primary);
@@ -273,7 +277,8 @@ a.menu:hover {
     overflow-wrap: break-word;
 }
 
-.details i {
+.details i,
+.openinghours {
     letter-spacing: 5px;
     color: var(--primary);
 }
@@ -290,20 +295,104 @@ a.menu:hover {
 .footersocials {
     color: var(--primary);
 }
-.gallery {
-    background-image: url(../images/head.jpg);
-    background-color: black;
-    background-position: center;
-    border-bottom: 2px solid var(--primary);
+.gallery-bg {
+    /* background-image: url(../images/head.jpg); */
+    /* background-color: black;
+    background-position: center; */
+    border-bottom: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
 }
 
 .btn {
     background-color: #cec327;
     border: none;
+    color:black;
 }
 .mapbg {
-    background-image: url('/images/map.png');
+    background-image: url('/images/map.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.faq {
+    margin: 20px 0;
+}
+
+.faq .item {
+    border: none;
+    margin-bottom: 50px;
+    background: none;
+}
+
+.t-p {
+    color: rgb(193 206 216);
+    padding: 30px 30px 0px 30px;
+}
+
+.faq .item .item-header h2 button.btn.btn-link {
+    background-image: url('/images/head.jpg');
+    color: white;
+    border-top: 3px;
+    border-left: 3px;
+    border-right: 3px;
+    border-bottom: 3px;
+    border-color: var(--primary);
+    border-style: solid;
+    border-radius: 0px;
+    font-family: 'outfit';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.5;
+    text-decoration: none;
+
+}
+
+.faq .item .item-header {
+    border-bottom: none;
+    background: transparent;
+    padding: 0px;
+    margin: 2px;
+}
+
+.faq .item .item-header h2 button {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.faq .item .item-header h2 i {
+    float: right;
+    font-size: 30px;
+    color: #cec327;
+    background-color: black;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+button.btn.btn-link.collapsed i {
+    transform: rotate(0deg);
+}
+
+button.btn.btn-link i {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.area-content {
+    color: white;
+}
+
+ul.deliveryareas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+
 }
