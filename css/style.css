@@ -308,7 +308,7 @@ a.menu:hover {
     color:black;
 }
 .mapbg {
-    background-image: url('/images/map.jpg');
+    background-image: url(../images/map.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -329,7 +329,7 @@ a.menu:hover {
 }
 
 .faq .item .item-header h2 button.btn.btn-link {
-    background-image: url('/images/head.jpg');
+    background-image: url(../images/head.jpg);
     color: white;
     border-top: 3px;
     border-left: 3px;
