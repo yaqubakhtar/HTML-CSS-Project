@@ -296,8 +296,8 @@ a.menu:hover {
     color: var(--primary);
 }
 .gallery-bg {
-    /* background-image:url(/images/header.png);
-    background-position: center; */
+    background-image:url(/images/header.png);
+    background-position: center;
     border-bottom: 1px solid var(--primary);
     border-top: 1px solid var(--primary);
 }
