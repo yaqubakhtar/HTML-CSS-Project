@@ -113,6 +113,9 @@ This flow kept a conscious effort in maintaining what a normal enquiry to a shis
 ![wireframe-figma](https://raw.githubusercontent.com/yaqubakhtar/HTML-CSS-Project/main/images/wireframe/About%20Us.png)
 
 Please note the actual website has changed slightly from these wireframes. These are high level and with more time the would be more define and would have more details. The end result came out looking far better than the initial design.
+A more recent draft looks similar to below, wireframe designed to be mobile friendly
+
+![wireframe-figma](https://raw.githubusercontent.com/yaqubakhtar/HTML-CSS-Project/main/images/wireframe/redesign%20midway.png)
 
 With more time I would have had a more detailed design with colors and images.
 
