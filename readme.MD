@@ -1,5 +1,5 @@
 # FlavazShisha milestone 1 project
-[Visit website on: ](https://yaqubakhtar.github.io/HTML-CSS-Project/index.html/)
+[Visit website on: ](https://yaqubakhtar.github.io/HTML-CSS-Project/)
 
 ![responsive-look](https://user-images.githubusercontent.com/93874443/146667915-9ae05e7f-2712-4dfc-9dd4-bbf9f54eea4e.png)
 
