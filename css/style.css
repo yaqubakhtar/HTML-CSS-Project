@@ -11,20 +11,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit',
-    sans-serif;
+        sans-serif;
 }
 .bgnav {
     border-bottom: 2px solid var(--primary);
+    background-image: url(../images/header.webp);
 }
+/*homepage carousel*/
+
 .carousel {
     margin-top: 4px;
-    border-top: 3px;
-    border-left: 3px;
-    border-right: 3px;
-    border-bottom: 3px;
-    border-color: var(--primary);
-    border-style: solid;
-}
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+
+    }
+
 /*navbar logo/brand*/
 
 .navbar-brand {
@@ -33,7 +34,8 @@
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    }
+}
+
 /*default menu toggler*/
 
 .navbar .navbar-toggler {
@@ -47,18 +49,18 @@
 }
 /*custom menu toggler*/
 
-.navbar .fa-bong {
-
+.navbar .fa-caret-square-down {
+    font-size: 25px;
     width: 20px;
     height: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 13px;
     color: var(--primary);
     border-radius: 6px;
     transform-origin: 0 0;
     transition: 0.4s;
+    right: 0px;
+    top:14px;
     position: absolute;
-    top: 17px;
-    right: 1px;
 }
 
 /*navbar links*/
@@ -75,28 +77,31 @@ a.menu {
     border-color: var(--primary);
     border-radius: 10px;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     }
 
 /* alert banner*/
 
 .alert {
     margin: 4px 16px;
-    border-color: var(--dark);
-    color:black;
-    border-radius: 15px;
-}
-/* menu social icons*/
-.socials i {
-    letter-spacing: 5px;
-    font-size: 25px;
-    color: var(--primary);
-}
-/*icons and brand/logo on hover*/
+    background-color: #000000;
+    color: #cec327;
 
-.socials i:hover,
+    font-size: 17px;
+}
+/* menu cta icon*/
+
+.ctaicon i {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: var(--light);
+    margin-right: 9px;
+}
+
+/*cta icon and brand/logo on hover*/
+.ctaicon i:hover,
 .navbar-brand:hover {
-    color: white;
+    color: var(--primary);
 }
 
 /*navbar links on hover*/
@@ -106,13 +111,13 @@ a.menu:hover {
     color: black;
     border-color: var(--primary);
     border-radius: 10px;
-    border-style: double;
-    border-width: 3px;
+    border-style: solid;
+    border-width: 2px;
 }
 /* how it works heading*/
 
 .howitworksheader {
-    background-image: url(../images/header.png);
+    background-image: url(../images/header.webp);
     background-size: contain;
     color: #EEEEEE;
     margin: 10px;
@@ -131,27 +136,27 @@ a.menu:hover {
     margin-top: 5px;
 }
 
-    .how1img,
-    .how2img,
-    .how3img,
-    .how4img {
-        margin-bottom: 5px;
+.how1img,
+.how2img,
+.how3img,
+.how4img {
+    margin-bottom: 5px;
 }
 
 .howitworks {
     color: var(--light);
-    background-image: url(../images/head.jpg);
+    background-image: url(../images/head.webp);
     background-color: black;
     border-top: 1px solid var(--primary);
     border-bottom: 1px solid var(--primary);
     background-size: cover;
     background-position: center;
-    }
+}
 
 /*our services heading*/
 
 .servicesheader {
-    background-image: url(../images/header.png);
+    background-image: url(../images/header.webp);
     background-size: contain;
     color: #EEEEEE;
     margin: 10px;
@@ -166,35 +171,38 @@ a.menu:hover {
 
 .ourservices {
     color: var(--light);
-    background-image: url(../images/head.jpg);
-     border-bottom: 1px solid var(--primary);
-     border-top: 1px solid var(--primary);
-     background-size: cover;
-     background-position: center;
-     }
+    background-image: url(../images/head.webp);
+    border-bottom: 1px solid var(--primary);
+    border-top: 1px solid var(--primary);
+    background-size: cover;
+    background-position: center;
+    }
+
 /* top flavours section*/
 
- .top.fa-ul {
-     display: inline-block;
-     margin-left: 10px;
+.top.fa-ul {
+    display: inline-block;
+    margin-left: 10px;
 
- }
+}
 
- .topflavours i {
-     color: var(--primary);
- }
+.topflavours i {
+    color: var(--primary);
+}
 
 /*areas section*/
 
- .areas.fa-ul {
-     display: inline-block;
-     margin-left: 10px;
+/* .areas.fa-ul {
+    display: inline-block;
+    margin-left: 10px;
 
- }
+}
 
- .areas i {
-     color: var(--primary);
- }
+.areas i {
+    color: var(--primary);
+}
+*/
+
 /* our services headings*/
 .home,
 .toppicks,
@@ -213,20 +221,17 @@ a.menu:hover {
 
 .footer {
     color: var(--light);
-    background-image: url(../images/head.jpg);
+    background-image: url(../images/head.webp);
     border-top: 1px solid var(--primary);
     background-size: cover;
     background-position: center;
- }
-/*footer opening hours*/
-
-
+}
 
 /*footer socials*/
 
 .endsocials i {
     letter-spacing: 5px;
-    font-size: 25px;
+    font-size: 50px;
     color: var(--primary);
 }
 
@@ -235,10 +240,7 @@ a.menu:hover {
 }
 
 .endsocials {
-    background-image: url(../images/header.png);
-    background-size: contain;
     color: #EEEEEE;
-    border: 2px solid var(--primary);
 }
 
 .footer-socials {
@@ -248,33 +250,31 @@ a.menu:hover {
     margin: 10px;
 }
 /*flavaz shisha hire 2022 heading*/
-
-.end {
-    background-image: url(../images/header.png);
-    background-size: contain;
-    border: 2px solid var(--primary);
-}
-
 .end h5 {
     color: #EEEEEE;
     margin: 10px;
     display: flex;
     justify-content: center;
 }
+/* areas.html deliveryareas sections*/
 
-/*footer details*/
-.address,
-.email,
-.phone,
-.mon-thu,
-.fri-sat,
-.sunday,
 .deliveryareas {
-    background-image: url(../images/header.png);
+    background-image: url(../images/header.webp);
     background-size: contain;
     border: 2px solid var(--primary);
     display: block;
     overflow-wrap: break-word;
+}
+
+ul.deliveryareas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.area-content {
+    color: white;
 }
 
 .details i,
@@ -295,8 +295,10 @@ a.menu:hover {
 .footersocials {
     color: var(--primary);
 }
+/*footer gallery*/
+
 .gallery-bg {
-    background-image:url(../images/header.png);
+    background-image: url(../images/header.webp);
     background-position: center;
     border-bottom: 1px solid var(--primary);
     border-top: 1px solid var(--primary);
@@ -305,13 +307,7 @@ a.menu:hover {
 .btn {
     background-color: #cec327;
     border: none;
-    color:black;
-}
-.mapbg {
-    background-image: url(../images/map.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    color: black;
 }
 .faq {
     margin: 20px 0;
@@ -329,7 +325,7 @@ a.menu:hover {
 }
 
 .faq .item .item-header h2 button.btn.btn-link {
-    background-image: url(../images/head.jpg);
+    background-image: url(../images/head.webp);
     color: white;
     border-top: 3px;
     border-left: 3px;
@@ -374,7 +370,6 @@ a.menu:hover {
     align-items: center;
     border-radius: 5px;
 }
-
 button.btn.btn-link.collapsed i {
     transform: rotate(0deg);
 }
@@ -383,15 +378,8 @@ button.btn.btn-link i {
     transform: rotate(180deg);
     transition: 0.5s;
 }
-
-.area-content {
-    color: white;
-}
-
-ul.deliveryareas {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: white;
-
+.menuinfo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
 }
