@@ -237,8 +237,8 @@ I have nearly achieved 90 across the board. In fact the site scored better in al
 
 I validated both my HTML and CSS code multiple times whilst building the website, I did this so that there were not a huge amount of errors/warnings at the final stages of development for me to deal with. This allowed me to incrementally improve my code and upon completion, there were 0 errors found. 
 
-![] (/images/test results/csscheck.png)
-![] (/images/test results/htmlcheck.png)
+![css](/images/testresults/csscheck.png)
+![html](/images/testresults/htmlcheck.png)
 
 ## *Known bugs and fixes*
 
